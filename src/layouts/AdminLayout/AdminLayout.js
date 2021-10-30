@@ -1,6 +1,8 @@
-import { Component } from 'react';
-import PropTypes
-  from "prop-types";
+import React, { Component, Fragment } from 'react';
+import PropTypes from "prop-types";
+import Topbar from "../components/Topbar";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class AdminLayout extends Component {
   constructor(props) {
@@ -17,9 +19,12 @@ class AdminLayout extends Component {
   render() {
     const {children} = this.props;
     return (
+        <Fragment>
+          <Topbar/>
         <main>
           {children}
         </main>
+        </Fragment>
     );
   }
 }
