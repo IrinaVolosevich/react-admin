@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
-import { Grid } from '@material-ui/core';
 import CinemaCard from './../Components/CinemaCard/CinemaCard';
+import {Col, Row} from "react-bootstrap";
 
 class CinemaList extends Component {
   render() {
-    return   <div>
-      <Grid container spacing={3}>
-          <Grid
-            item
-            key={Math.random(10)}
-            lg={4}
-            md={6}
-            xs={12}>
-            <CinemaCard/>
-          </Grid>
-      </Grid>
-  </div>;
+    return <Row md={4} className="g-4">
+        {Array.from({ length: 12 }).map((_, idx) => (
+            <Col>
+      <CinemaCard/>
+            </Col>
+        ))}
+    </Row>
   }
 }
 

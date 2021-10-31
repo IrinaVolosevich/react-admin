@@ -5,7 +5,7 @@ function CinemaCard() {
     return (
         <>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant='top' src='https://source.unsplash.com/featured/?cinema' />
+                <Card.Img height='200px' variant='top' src='https://source.unsplash.com/featured/?cinema' />
                 <Card.Body>
                     <Card.Title>Venom</Card.Title>
                     <Card.Subtitle className='mb-2 text-muted'>USA</Card.Subtitle>
