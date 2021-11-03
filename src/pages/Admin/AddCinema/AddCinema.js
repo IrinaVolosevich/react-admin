@@ -28,8 +28,8 @@ function AddCinema() {
                 <Form.Label>Афиша</Form.Label>
                 <Form.Control type='file' size='sm' />
             </Form.Group>
-            <Button variant='primary' type='submit'>
-                Submit
+            <Button variant='primary' type='submit' style={{marginTop: '10px'}}>
+                Добавить
             </Button>
         </Form>
     );

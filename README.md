@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+#Рабочие страницы
+http://localhost:3000/#/admin/cinemas/edit
+http://localhost:3000/#/admin/cinemas/add
+http://localhost:3000/#/admin/cinemas/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

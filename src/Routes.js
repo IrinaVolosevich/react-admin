@@ -7,6 +7,7 @@ import AdminLayout from './layouts/AdminLayout';
 //Admin
 const CinemaList = lazy(() => import('./pages/Admin/CinemaList'));
 const AddCinema = lazy(() => import('./pages/Admin/AddCinema'));
+const EditCinema = lazy(() => import('./pages/Admin/EditCinema'));
 
 const Routes = () => {
   return (
@@ -24,6 +25,12 @@ const Routes = () => {
                 path="/admin/cinemas/add"
                 layout={AdminLayout}
                 component={AddCinema}
+            />
+            <WithLayoutRoute
+                exact
+                path="/admin/cinemas/edit"
+                layout={AdminLayout}
+                component={EditCinema}
             />
             <Route path="*" component={() => '404 NOT FOUND'} />
           </Switch>
